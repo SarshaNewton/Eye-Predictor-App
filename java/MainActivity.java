@@ -121,24 +121,6 @@ public class MainActivity extends AppCompatActivity {
             splitText2.setText(String.format("Green = %s%%", vals[1]));
         }else if (vals[0] == vals[1]) {
             fiftyImage1.setImageResource(R.drawable.brownbaby);
-            fiftyImage2.setImageResource(R.drawable.bluebaby);
-            reImg1.setImageResource(R.drawable.greenbaby);
-
-            fiftyImage1.setVisibility(View.VISIBLE);
-            fiftyImage2.setVisibility(View.VISIBLE);
-            reImg1.setVisibility(View.VISIBLE);
-            remainderText.setVisibility(View.VISIBLE);
-
-            babyImage.setVisibility(View.INVISIBLE);
-            reImg2.setVisibility(View.INVISIBLE);
-            reImg3.setVisibility(View.INVISIBLE);
-            splitText1.setVisibility(View.INVISIBLE);
-            splitText2.setVisibility(View.INVISIBLE);
-
-            mainText.setText(R.string.fiftysplity);
-            remainderText.setText(String.format("Green = %s%%", vals[1]));
-        }else if (vals[0] == vals[2]) {
-            fiftyImage1.setImageResource(R.drawable.brownbaby);
             fiftyImage2.setImageResource(R.drawable.greenbaby);
             reImg1.setImageResource(R.drawable.bluebaby);
 
@@ -155,6 +137,24 @@ public class MainActivity extends AppCompatActivity {
 
             mainText.setText(R.string.fiftysplity);
             remainderText.setText(String.format("Blue = %s%%", vals[2]));
+        }else if (vals[0] == vals[2]) {
+            fiftyImage1.setImageResource(R.drawable.brownbaby);
+            fiftyImage2.setImageResource(R.drawable.bluebaby);
+            reImg1.setImageResource(R.drawable.greenbaby);
+
+            fiftyImage1.setVisibility(View.VISIBLE);
+            fiftyImage2.setVisibility(View.VISIBLE);
+            reImg1.setVisibility(View.VISIBLE);
+            remainderText.setVisibility(View.VISIBLE);
+
+            babyImage.setVisibility(View.INVISIBLE);
+            reImg2.setVisibility(View.INVISIBLE);
+            reImg3.setVisibility(View.INVISIBLE);
+            splitText1.setVisibility(View.INVISIBLE);
+            splitText2.setVisibility(View.INVISIBLE);
+
+            mainText.setText(R.string.fiftysplity);
+            remainderText.setText(String.format("Green = %s%%", vals[1]));
         }else if (vals[1] == vals[2]) {
             fiftyImage1.setImageResource(R.drawable.greenbaby);
             fiftyImage2.setImageResource(R.drawable.bluebaby);
